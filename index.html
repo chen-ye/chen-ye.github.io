@@ -1,13 +1,21 @@
 <html>
 
 <head>
+    <script src="https://use.typekit.net/wmj1ahy.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
     <style>
         body {
             display: flex;
             justify-content: center;
             color: #333a57;
             line-height: 1.75em;
-            font-family: "Gotham";
+            font-family: "futura-pt", Avenir;
             font-weight: 300;
             font-size: 1.2rem;
         }
@@ -18,8 +26,11 @@
             padding: 4em 15vw 0 2em;
         }
         
+        article {
+            padding: 0em 0 1.5em;
+        }
+        
         h1 {
-            font-family: Gotham;
             color: #ff3b58;
             font-size: 3.157em;
         }
@@ -32,11 +43,34 @@
             color: #ff3b58;
         }
         
+        footer p {
+            color: rgba(51, 58, 87, .75);
+            font-size: .75em;
+        }
+        
+        footer a {
+            color: rgba(51, 58, 87, 1);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: rgba(255, 38, 70, 1);
+            text-decoration: underline;
+        }
+        
         hr {
             display: block;
             height: 4px;
             background-color: #ff3b58;
             border: none;
+            margin: .5em 0;
+        }
+        
+        hr.subdivider {
+            height: 0px;
+            background: none;
+            border-bottom: 2px dotted #333a57;
+            opacity: .3;
         }
     </style>
 </head>
@@ -44,11 +78,36 @@
 <body>
     <div class="content">
         <hr/>
-        <h1>Hey, I'm Chen!</h1>
-        <p>I'm a <a href="https://medium.com/hh-design/product-design-i-d6db36b73364">product designer</a>, <a href="https://github.com/chen-ye">developer</a>, and <a href="/portfolio/tango">biologist</a> at Brown. I'm a big fan of applying visualisation and kinetics to help give people a more intuitive idea of information.</p>
-        <p>This summer, I was at Microsoft working on a product for the <a href="http://www.microsoft.com/Microsoft-Band/en-us">Microsoft Band</a>. I also interned with <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/discovery-advisor.html">IBM Watson</a> in the spring. I led the design team for <a href="/portfolio/hackatbrown">Hack@Brown</a> last year (and personally developed our web frontend). It's gotten some accolades.</p>
-        <p>These days, I <a href="https://medium.com/@siranachronist">write</a>, mentor, and try to figure out what I can squeeze into my <a href="http://pretty.yeesus.com">portfolio</a> without violating NDA.</p>
-        <p><a href="mailto:cye@brown.edu">Hit me up</a>, or check out my (very WIP) <a href="/portfolio/resume.pdf">resume</a> and/or <a href="https://pretty.yeesus.com">portfolio</a>.</p>
+        <article>
+            <h1>Hey, I'm Chen!</h1>
+            <p>
+                I'm a <a href="https://medium.com/hh-design/product-design-i-d6db36b73364">product designer</a>, <a href="https://github.com/chen-ye">developer</a>, and <a href="/portfolio/tango">biologist</a> at Brown. I'm a big fan of applying visualisation and kinetics to help give people a more intuitive idea of information.
+            </p>
+            <p>
+                This summer, I was at Microsoft working on a product for the <a href="http://www.microsoft.com/Microsoft-Band/en-us">Microsoft Band</a>. I also interned with <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/discovery-advisor.html">IBM Watson</a> in the spring. I led the design team for <a href="/portfolio/hackatbrown">Hack@Brown</a> last year (and personally developed our web frontend). It's gotten some accolades.
+            </p>
+            <p>
+                These days, I <a href="https://medium.com/@siranachronist">write</a>, mentor, and try to figure out what I can squeeze into my <a href="http://pretty.yeesus.com">portfolio</a> without violating NDA.
+            </p>
+            <p>
+                <a href="mailto:cye@brown.edu">Hit me up via email</a>, or check out my (very WIP) <a href="/portfolio/resume.pdf">resume</a> and/or <a href="http://pretty.yeesus.com">portfolio</a>.
+            </p>
+        </article>
+        <hr class="subdivider" />
+        <footer>
+            <p>
+                <em>This is definitely still under construction.</em> <a href="http://chen.yeesus.com">Old site</a>.
+            </p>
+            <p>
+                <a href="https://medium.com/@siranachronist">Medium</a> |
+                <a href="https://www.behance.net/siranachronist">Behance</a> |
+                <a href="https://dribbble.com/siranachronist">Dribbble</a> |
+                <a href="https://github.com/chen-ye">Github</a> |
+                <a href="https://vimeo.com/blasternt">Vimeo</a> |
+                <a href="https://twitter.com/siranachronist">Twitter</a> |
+                <a href="https://www.facebook.com/blasternt">Facebook</a>
+            </p>
+        </footer>
     </div>
 </body>
 
